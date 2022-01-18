@@ -58,14 +58,7 @@ public class QueryGenerator {
         get.startServer();
         
         // Wait for responses
-        do {
-            // Get response
-            response = get.getMessage();
-
-            // Wait
-            MiscUtil.waitamoment(100);
-
-        } while (!MiscUtil.notBlank(response));
+        response = get.getMessage();
 
         // Close the server
         get.closeServer();
